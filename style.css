@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+h2 {
+    text-align: center;
+    color: #ff66a3;
+    margin-bottom: 20px;
+}
+
+.option {
+    border: 1px solid #ff66a3;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.option:hover {
+    transform: scale(1.05);
+}
+
+.option.popular {
+    border-color: #ff3366;
+    background-color: #fff0f5;
+}
+
+.option label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.discount {
+    color: #ff66a3;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.most-popular {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background-color: #ff3366;
+    color: #fff;
+    padding: 3px 8px;
+    font-size: 0.75em;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.sizes {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.sizes div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    color: #ff66a3;
+}
+
+button {
+    background-color: #ff3366;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.powered-by {
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.sizes {
+    display: none;
+}
+
+.option:hover .sizes {
+    display: flex;
+    margin-top: 10px;
+}
